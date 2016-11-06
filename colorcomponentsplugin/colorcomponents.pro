@@ -1,10 +1,10 @@
 TEMPLATE = lib
 CONFIG += qt plugin
-QT += declarative
+QT += qml
 
 TARGET  = colorcomponentsplugin
 
-DESTDIR = ../plugin
+DESTDIR = ../plugin/ColorComponents
 OBJECTS_DIR = tmp
 MOC_DIR = tmp
 
@@ -14,7 +14,3 @@ HEADERS += colorcomponents.h \
 SOURCES += colorcomponents.cpp \
         colorcomponentsplugin.cpp
 
-symbian {
- include($$QT_SOURCE_TREE/examples/symbianpkgrules.pri)
- TARGET.EPOCALLOWDLLDATA = 1
-}

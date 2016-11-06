@@ -1,5 +1,6 @@
-import QtQuick 1.1
+import QtQuick 2.5
 import "components"
+import ColorComponents 1.0
 
 Rectangle {
     id: colorPicker
